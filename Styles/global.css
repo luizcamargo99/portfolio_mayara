@@ -115,8 +115,14 @@ main {
     height: 12rem;
     width: 12rem;
     border-radius: 1rem;
+    gap: 1rem;
     background: var(--primary);
+    color: #fff;
 }
+
+    /* .icon {
+        width: 2rem;
+    } */
 
 #banner {
     width: 100%;
@@ -140,4 +146,9 @@ main {
 #logo {
     width: 15rem;
     cursor: pointer;
+}
+
+::selection {
+    background: var(--primary);
+    color: #fff;
 }
