@@ -76,8 +76,18 @@
         height: 10rem;
     }
 
+    .card-big {
+        height: 27rem;
+        width: 20rem;
+    }
+    
+
     #profile-pic {
         width: 15rem;
         height: 15rem;
+    }
+
+    .envie-mensagem {
+        width: 22rem;
     }
 }
