@@ -118,11 +118,12 @@ main {
     gap: 1rem;
     background: var(--primary);
     color: #fff;
+    cursor: pointer;
 }
 
-    /* .icon {
-        width: 2rem;
-    } */
+.card:hover {
+   transform: scale(1.05);
+}
 
 #banner {
     width: 100%;
@@ -136,6 +137,15 @@ main {
     background-repeat: no-repeat;
     width: 20rem;
     height: 20rem;
+    border: 0.2rem solid var(--primary);
+}
+
+#empresa-1 {
+    background-image: url(../Images/logotipo-y-logo.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 15rem;
+    height: 15rem;
     border: 0.2rem solid var(--primary);
 }
 
