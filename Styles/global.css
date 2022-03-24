@@ -113,10 +113,6 @@ main {
 #banner {
     width: 100%;
     opacity: .7;
-    /* background-image: url(../Images/banner.jpg);
-    background-repeat: no-repeat;
-    background-size: contain;
-    height: 50rem; */
     width: 100%;
 }
 
