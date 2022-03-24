@@ -1,0 +1,73 @@
+@media (max-width: 940px) {
+    header {
+        gap: 1%;
+    }
+
+    li {
+        font-size: .7rem;
+    }
+}
+
+@media (max-width: 700px) {
+    header {
+        gap: 20%;
+    }
+
+	#btn-mobile {
+		display: inline;
+		cursor: pointer;
+		float: right;
+	}
+
+	#menu {
+		display: block;
+		position: absolute;
+		top: 90px;
+		font-size: 20px;
+		right: 0;
+		width: 100%;
+		height: 0;
+		background: #292B42;
+		transition: .6s;
+		z-index: 1000;
+		visibility: hidden;
+		overflow-y: hidden;
+	}
+
+	#menu.active {
+		height: calc(100vh - 90px);
+		visibility: visible;
+		overflow-y: auto;
+		width: 65%;
+	}
+
+	#menu li {
+		display: block;
+		padding: 1rem;
+        font-size: 1.1rem;
+		border-bottom: 2px solid rgba(255, 255, 255, 0.05);
+	}
+
+    .linha {
+		width: 1.5rem;
+		height: 0.188rem;
+		border-radius: 2px;
+		transition: transform .2s ease-out;
+		-webkit-transition: transform .2s ease-out;
+		background: #fff;
+		margin-top: 0.2em;
+	}
+
+	#linha1.active {
+		transform: rotate(-45deg);
+	}
+
+	#linha2.active {
+		transform: rotate(45deg);
+        margin-top: 0;
+	}
+
+	#linha3.active {
+		visibility: hidden;
+	}
+}
