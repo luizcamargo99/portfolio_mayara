@@ -7,6 +7,7 @@
     --background: #fff;
     --background-second: rgb(245, 245, 245);
     --text: rgb(0, 0, 0);
+    --primary: #292B42;
     --second: #d1b519;
 }
 
@@ -21,7 +22,7 @@ body {
 }
 
 header {
-    background-color: #292B42;
+    background-color: var(--primary);
     color: #fff;
     height: 6rem;
     display: flex;
@@ -77,11 +78,18 @@ main {
 }
 
 .back-banner {
-    background: #292B42;
+    background: var(--primary);
+}
+
+.back-banner h3 {
+    position: absolute;
+    width: 70%;
+    color: white;
+    text-align: center;
 }
 
 .circle {
-    border-radius: 10rem;
+    border-radius: 100%;
 }
 
 .secao {
@@ -104,15 +112,15 @@ main {
 }
 
 .card {
-    height: 10rem;
-    width: 10rem;
+    height: 12rem;
+    width: 12rem;
     border-radius: 1rem;
-    background: #292B42;
+    background: var(--primary);
 }
 
 #banner {
     width: 100%;
-    opacity: .7;
+    opacity: .5;
     width: 100%;
 }
 
@@ -122,6 +130,7 @@ main {
     background-repeat: no-repeat;
     width: 20rem;
     height: 20rem;
+    border: 0.2rem solid var(--primary);
 }
 
 #text-sobre {
