@@ -1,122 +1,129 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./Styles/global.css">
-    <link rel="stylesheet" href="./Styles/responsive.css">
-    <script src="./Scripts/main.js"></script>
-    <title>Mayara Marcela</title>
-</head>
-<body>
-    <header>
-      <a href="#banner"><img src="./Images/logo.png" alt="Logotipo Mayara Marcela" id="logo"></a> 
-        <div id="btn-mobile">
+   <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="./Styles/global.css">
+      <link rel="stylesheet" href="./Styles/responsive.css">
+      <script src="./Scripts/main.js"></script>
+      <script src="./Scripts/angular.min.js"></script>
+      <script src="./Scripts/app.js"></script>
+      <script src="./Scripts/ctrlForm.min.js"></script>
+      <script src="https://smtpjs.com/v3/smtp.js"></script>  
+      <title>Mayara Marcela</title>
+   </head>
+   <body ng-app="app" ng-cloak onload="init()">
+       <div ng-controller="FormController as ctrlForm">
+      <header>
+         <a href="#banner"><img src="./Images/logo.png" alt="Logotipo Mayara Marcela" id="logo"></a> 
+         <div id="btn-mobile">
             <div id="linha1" class="linha"></div>
             <div id="linha2" class="linha"></div>
             <div id="linha3" class="linha"></div>
-         </div> 
-        <ul id="menu">
+         </div>
+         <ul id="menu">
             <li><a href="#sobre">Sobre</a></li>
             <li><a href="#areas"> Áreas de Atuação</a></li>
             <li><a href="#experiencias">Experiências</a></li>
             <li><a href="#depoimentos">Depoimentos</a></li>
             <li><a href="#contato">Contato</a></li>
-        </ul>
-    </header>
-    <main>
-        <div class="row center back-banner">
+         </ul>
+      </header>
+      <main>
+         <div class="row center back-banner">
             <img src="./Images/banner.jpg" alt="Banner" id="banner">
-            <h3>Alguma frase de impacto que resuma os objetivos</h3>   
-        </div>
-        <div class="column center secao" id="sobre">            
-          <h1>SOBRE</h1>  
-          <div class="row center" style="gap: 5rem">
-              <div id="profile-pic" class="circle img"></div>
-              <span id="text-sobre">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veritatis, eveniet sapiente tempore culpa voluptatibus ut odit atque voluptatem doloribus, maiores et ullam incidunt perferendis ratione voluptate expedita exercitationem ipsum? Quibusdam.</span>
-          </div>        
-        </div>
-        <div class="column center secao listrado" id="areas">            
-            <h1>ÁREAS DE ATUAÇÃO</h1>  
-            <div class="row center" style="gap: 3rem">
-                <div class="card  card-small column center">
-                    <img src="./Images/icons8-law-30 (1).png" alt="icone direito" class="icon">
-                    <span>Direito Empresarial</span>
-                </div>
-                <div class="card card-small column center">
-                    <img src="./Images/icons8-law-30 (2).png" alt="icone direito" class="icon">
-                    <span>Direito do Trabalho</span>
-                </div>
-                <div class="card card-small column center">
-                    <img src="./Images/icons8-document-30.png" alt="icone direito" class="icon">
-                    <span>Direito Comercial</span>
-                </div>
-                <div class="card card-small column center">
-                    <img src="./Images/icons8-building-30.png" alt="icone direito" class="icon">
-                    <span>Direito Imobiliário</span>
-                </div>
-            </div>        
-          </div>
-          <div class="column center secao" id="experiencias">            
-            <h1>EXPERIÊNCIAS</h1>  
-            <div class="row center" style="gap: 5rem">       
-                <div id="empresa-1" class="circle img logo-empresa"></div>         
-                <span id="text-sobre">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veritatis, eveniet sapiente tempore culpa voluptatibus ut odit atque voluptatem doloribus, maiores et ullam incidunt perferendis ratione voluptate expedita exercitationem ipsum? Quibusdam.</span>    
-            </div>   
-            <div class="row center" style="gap: 5rem">     
-                <div id="empresa-2" class="circle img logo-empresa"></div>           
-                <span id="text-sobre">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veritatis, eveniet sapiente tempore culpa voluptatibus ut odit atque voluptatem doloribus, maiores et ullam incidunt perferendis ratione voluptate expedita exercitationem ipsum? Quibusdam.</span>
-            </div>       
-          </div>
-          <div class="column center secao listrado" id="depoimentos">            
-            <h1>DEPOIMENTOS</h1>  
-            <div class="row center" style="gap: 5rem">     
-                <div class="card card-big column center">
-                    <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, impedit quibusdam. Dolores deserunt, voluptas quaerat molestias, quibusdam quam eius, nihil magni eaque odio accusamus! Esse possimus maiores tempore cupiditate repellendus.</span>
-                    <h4>Nome Pessoa</h4>
-                    <h6>Cargo</h6>
-                </div>  
-                <div class="card card-big column center">
-                    <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, impedit quibusdam. Dolores deserunt, voluptas quaerat molestias, quibusdam quam eius, nihil magni eaque odio accusamus! Esse possimus maiores tempore cupiditate repellendus.</span>
-                    <h4>Nome Pessoa</h4>
-                    <h6>Cargo</h6>
-                </div>    
-                <div class="card card-big column center">
-                    <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, impedit quibusdam. Dolores deserunt, voluptas quaerat molestias, quibusdam quam eius, nihil magni eaque odio accusamus! Esse possimus maiores tempore cupiditate repellendus.</span>
-                    <h4>Nome Pessoa</h4>
-                    <h6>Cargo</h6>
-                </div>   
+            <h3>Alguma frase de impacto que resuma os objetivos</h3>
+         </div>
+         <div class="column center secao" id="sobre">
+            <h1>SOBRE</h1>
+            <div class="row center" style="gap: 5rem">
+               <div id="profile-pic" class="circle img"></div>
+               <span id="text-sobre">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veritatis, eveniet sapiente tempore culpa voluptatibus ut odit atque voluptatem doloribus, maiores et ullam incidunt perferendis ratione voluptate expedita exercitationem ipsum? Quibusdam.</span>
             </div>
-          </div>
-          <div class="column center secao" id="contato">            
-            <h1>CONTATO</h1>  
-            <div class="row center" style="gap: 5rem">           
-               <div class="column" style="gap: .5rem">
-                   <span>Telefone</span>
-                    <h4>(13)99193-7679</h4>
-                   <div class="line"></div>
-                   <span>E-mail</span>
-                    <h4>contato@advmayaramarcela.com</h4>
-                    <div class="line"></div>
-                    <div class="row" style="gap: .5rem">
-                        <img src="./Images/linkedin.png" alt="linkedin" style="width: 2rem;" class="social-media">
-                        <img src="./Images/instagram.svg" alt="instagram" style="width: 1.5rem;" class="social-media">
-                    </div>
+         </div>
+         <div class="column center secao listrado" id="areas">
+            <h1>ÁREAS DE ATUAÇÃO</h1>
+            <div class="row center" style="gap: 3rem">
+               <div class="card  card-small column center">
+                  <img src="./Images/icons8-law-30 (1).png" alt="icone direito" class="icon">
+                  <span>Direito Empresarial</span>
                </div>
-               <div class="column envie-mensagem center" style="gap: 1rem">
-                <h2>Envie sua mensagem!</h2>
-                <input type="text" placeholder="Nome*">
-                <input type="text" placeholder="Email*">
-                <input type="text" placeholder="Assunto*">
-                <textarea name="mensagem" id="" cols="30" rows="10" placeholder="Mensagem*"></textarea>
-                <button>Enviar</button>
-                </div>
-            </div>    
-          </div>
-    </main>
-    <footer>
-        <span> Todos os Direitos Reservados © 2022 |<b> OAB/SP 443.659 </b>| Site criado por <a href="https://luizcamargo.dev" target="blank">Luiz Camargo</a>  </span>
-    </footer>
-</body>
+               <div class="card card-small column center">
+                  <img src="./Images/icons8-law-30 (2).png" alt="icone direito" class="icon">
+                  <span>Direito do Trabalho</span>
+               </div>
+               <div class="card card-small column center">
+                  <img src="./Images/icons8-document-30.png" alt="icone direito" class="icon">
+                  <span>Direito Comercial</span>
+               </div>
+               <div class="card card-small column center">
+                  <img src="./Images/icons8-building-30.png" alt="icone direito" class="icon">
+                  <span>Direito Imobiliário</span>
+               </div>
+            </div>
+         </div>
+         <div class="column center secao" id="experiencias">
+            <h1>EXPERIÊNCIAS</h1>
+            <div class="row center" style="gap: 5rem">
+               <div id="empresa-1" class="circle img logo-empresa"></div>
+               <span id="text-sobre">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veritatis, eveniet sapiente tempore culpa voluptatibus ut odit atque voluptatem doloribus, maiores et ullam incidunt perferendis ratione voluptate expedita exercitationem ipsum? Quibusdam.</span>    
+            </div>
+            <div class="row center" style="gap: 5rem">
+               <div id="empresa-2" class="circle img logo-empresa"></div>
+               <span id="text-sobre">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veritatis, eveniet sapiente tempore culpa voluptatibus ut odit atque voluptatem doloribus, maiores et ullam incidunt perferendis ratione voluptate expedita exercitationem ipsum? Quibusdam.</span>
+            </div>
+         </div>
+         <div class="column center secao listrado" id="depoimentos">
+            <h1>DEPOIMENTOS</h1>
+            <div class="row center" style="gap: 5rem">
+               <div class="card card-big column center">
+                  <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, impedit quibusdam. Dolores deserunt, voluptas quaerat molestias, quibusdam quam eius, nihil magni eaque odio accusamus! Esse possimus maiores tempore cupiditate repellendus.</span>
+                  <h4>Nome Pessoa</h4>
+                  <h6>Cargo</h6>
+               </div>
+               <div class="card card-big column center">
+                  <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, impedit quibusdam. Dolores deserunt, voluptas quaerat molestias, quibusdam quam eius, nihil magni eaque odio accusamus! Esse possimus maiores tempore cupiditate repellendus.</span>
+                  <h4>Nome Pessoa</h4>
+                  <h6>Cargo</h6>
+               </div>
+               <div class="card card-big column center">
+                  <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, impedit quibusdam. Dolores deserunt, voluptas quaerat molestias, quibusdam quam eius, nihil magni eaque odio accusamus! Esse possimus maiores tempore cupiditate repellendus.</span>
+                  <h4>Nome Pessoa</h4>
+                  <h6>Cargo</h6>
+               </div>
+            </div>
+         </div>
+         <div class="column center secao" id="contato">
+            <h1>CONTATO</h1>
+            <div class="row center" style="gap: 5rem">
+               <div class="column" style="gap: .5rem">
+                  <span>Telefone</span>
+                  <h4>(13) 99193-7679</h4>
+                  <div class="line"></div>
+                  <span>E-mail</span>
+                  <h4>contato@advmayaramarcela.com</h4>
+                  <div class="line"></div>
+                  <div class="row" style="gap: .5rem; align-items: center;">
+                    <a href="https://www.linkedin.com/in/mayara-marcela-051bb419a/" target="blank"> <img src="./Images/linkedin.png" alt="linkedin" style="width: 2rem;" class="social-media"></a>
+                    <a href="https://www.instagram.com/maaymarcela/" target="blank"> <img src="./Images/instagram.svg" alt="instagram" style="width: 1.5rem;" class="social-media"> </a>
+                  </div>
+               </div>
+               <form class="column envie-mensagem center" style="gap: 1rem" name="myForm">
+                  <h2>Envie sua mensagem!</h2>
+                  <input type="text" placeholder="Nome*" ng-model="formModel.nomeMensagem" required> 
+                  <input type="text" placeholder="Email*" ng-model="formModel.emailMensagem" required>
+                  <input type="text" placeholder="Assunto*"  ng-model="formModel.assuntoMensagem" required>
+                  <textarea name="mensagem" cols="30" rows="10" placeholder="Mensagem*" ng-model="formModel.mensagem" required></textarea>
+                  <button ng-click="SendEmail()" ng-disabled="myForm.$error.required">Enviar</button>
+                  <span>{{enviado}}</span>
+               </form>
+            </div>
+         </div>         
+      </main>
+      <footer>
+         <span id="texto-footer">  </span>
+      </footer>
+    </div>
+   </body>
 </html>
