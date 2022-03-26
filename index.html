@@ -35,34 +35,59 @@
       <main>
          <div class="row center back-banner">
             <img src="./Images/banner.jpg" alt="Banner" id="banner">
-            <h3>Alguma frase de impacto que resuma os objetivos</h3>
+            <h3>TE AJUDO A DESCOMPLICAR QUESTÕES JURÍDICAS!</h3>
          </div>
          <div class="column center secao" id="sobre">
             <h1>SOBRE</h1>
             <div class="row center" style="gap: 5rem">
                <div id="profile-pic" class="circle img"></div>
-               <span id="text-sobre">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veritatis, eveniet sapiente tempore culpa voluptatibus ut odit atque voluptatem doloribus, maiores et ullam incidunt perferendis ratione voluptate expedita exercitationem ipsum? Quibusdam.</span>
+               <div id="text-sobre" class="column">
+                  <p>Nascida em São Paulo, desde pequena tive contato com o meio jurídico, onde me apaixonei por resolver questões judiciais. Quando fui iniciar o período para escolher um curso na faculdade, não hesitei em escolher Direito. Hoje, anos depois, eu tenho cada vez mais a certeza que é isso que eu quero para minha vida.</p>
+                   <p>Mas quem é a Mayara, de verdade? Gosto de ajudar ao próximo. Sinto que isso é a minha missão de vida. Nas horas vagas, gosto de passar um tempo com a minha família, com meu esposo e com amigos. Gosto da simplicidade da vida. Escutar músicas e entender o que aquela onda sonora está tentando transmitir. Viajar e conhecer diferentes culturas.
+                  </p>
+               </div>
+               
             </div>
          </div>
          <div class="column center secao listrado" id="areas">
             <h1>ÁREAS DE ATUAÇÃO</h1>
             <div class="row center" style="gap: 3rem">
-                <a href="./Views/direito-civil.html"><div class="card  card-small column center">
-                 <img src="./Images/icons8-law-30 (1).png" 
-                    alt="icone direito" class="icon"> 
-                  <span>Direito Civil</span>
-               </div> </a> 
-               <div class="card card-small column center">
-                  <img src="./Images/icons8-law-30 (2).png" alt="icone direito" class="icon">
-                  <span>Direito do Trabalho</span>
+               <div class="card  card-small column center" onclick="virarCard(this)">
+                   <div class="card-front">
+                     <img src="./Images/icons8-law-30 (1).png" 
+                     alt="icone direito" class="icon"> 
+                   <span>Direito Civil</span>
+                   </div>
+                   <div class="card-back">
+                      <span>Texto aqui</span>
+                   </div>
                </div>
-               <div class="card card-small column center">
-                  <img src="./Images/icons8-document-30.png" alt="icone direito" class="icon">
-                  <span>Direito Comercial</span>
+               <div class="card card-small column center" onclick="virarCard(this)">
+                  <div class="card-front">
+                     <img src="./Images/icons8-law-30 (2).png" alt="icone direito" class="icon">
+                     <span>Direito do Trabalho</span>
+                  </div>
+                  <div class="card-back">
+                     <span>Texto aqui</span>
+                  </div>
                </div>
-               <div class="card card-small column center">
-                  <img src="./Images/icons8-building-30.png" alt="icone direito" class="icon">
-                  <span>Direito Imobiliário</span>
+               <div class="card card-small column center" onclick="virarCard(this)">       
+                  <div class="card-front">           
+                     <img src="./Images/icons8-document-30.png" alt="icone direito" class="icon">
+                     <span>Direito Comercial</span>
+                  </div>
+                  <div class="card-back">
+                     <span>Texto aqui</span>
+                  </div>
+               </div>
+               <div class="card card-small column center" onclick="virarCard(this)">
+                  <div class="card-front">  
+                     <img src="./Images/icons8-building-30.png" alt="icone direito" class="icon">
+                     <span>Direito Imobiliário</span>
+                  </div>
+                  <div class="card-back">
+                     <span>Texto aqui</span>
+                  </div>
                </div>
             </div>
          </div>
@@ -110,6 +135,7 @@
                   <div class="row" style="gap: .5rem; align-items: center;">
                     <a href="https://www.linkedin.com/in/mayara-marcela-051bb419a/" target="blank"> <img src="./Images/linkedin.png" alt="linkedin" style="width: 2rem;" class="social-media"></a>
                     <a href="https://www.instagram.com/maaymarcela/" target="blank"> <img src="./Images/instagram.svg" alt="instagram" style="width: 1.5rem;" class="social-media"> </a>
+                    <a href="https://api.whatsapp.com/send?phone=5513991937679&text=Ol%C3%A1%2C%20vim%20do%20seu%20site.%20" target="blank"> <img src="./Images/wpp.png" alt="Whats" style="width: 1.7rem;" class="social-media"> </a>
                   </div>
                </div>
                <form class="column envie-mensagem center" style="gap: 1rem" name="myForm">

@@ -95,4 +95,8 @@
         width: 10rem;
         height: 10rem;
     }
+
+	.back-banner h3 {
+		font-size: 1.2rem;
+	}
 }
