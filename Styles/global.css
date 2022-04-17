@@ -277,7 +277,7 @@ mark {
 }
 
 
-#text-sobre {
+.text-sobre {
     width: 50%;
     text-align: justify;
     gap: 2rem;
